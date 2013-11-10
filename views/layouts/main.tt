@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=<% settings.charset %>" />
+    <title>Count</title>
+    <link href="<% request.uri_base %>/js/jquery.counter-analog.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="<% request.uri_base %>/js/jquery.counter-analog2.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="<% request.uri_base %>/js/jquery.min.js" type="text/javascript"></script>
+    <script src="<% request.uri_base %>/js/jquery.counter.js" type="text/javascript"></script>
+</head>
+<body style="background: #333;">
+<% content %>
+</body>
+</html>

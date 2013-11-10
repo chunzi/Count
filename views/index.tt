@@ -1,0 +1,19 @@
+
+<div style="width: 50%; margin: 300px auto; text-align: center;">
+<span class="counter counter-analog2" data-direction="up" data-interval="1" data-format="999999" data-stop="<% count %>"><% count - 1 %></span>
+</div>
+
+<script>
+    $('.counter').counter();
+    $('.counter').on('counterStop', function() {
+
+        setTimeout(function(){
+            $.getJSON('/count',function(json){
+                var stop = json.count;
+                $('.counter').counter({ stop: stop});
+            });
+        }, 1000); 
+        
+    });
+
+</script>
