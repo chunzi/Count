@@ -6,7 +6,7 @@ our $VERSION = '0.1';
 
 get '/' => sub {
     my $count = get_count();
-    template 'index', { count => $count };
+    template 'index', { stop => $count, start => $count - 5 };
 };
 
 get '/count' => sub {

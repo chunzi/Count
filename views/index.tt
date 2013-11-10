@@ -1,6 +1,6 @@
 
 <div style="width: 50%; margin: 300px auto; text-align: center;">
-<span class="counter counter-analog2" data-direction="up" data-interval="1" data-format="999999" data-stop="<% count %>"><% count - 1 %></span>
+<span class="counter counter-analog2" data-direction="up" data-interval="1" data-format="9999" data-stop="<% stop %>"><% start %></span>
 </div>
 
 <script>

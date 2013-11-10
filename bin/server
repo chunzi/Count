@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+plackup -s Starman -E production --keep-alive 30 --workers 10 -p 4700 -a bin/app.pl
+
